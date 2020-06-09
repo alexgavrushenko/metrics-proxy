@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "metrics-proxy",
+]
+
+
+[profile.release]
+# Link time optimization greatly reduces the .so/binary sizes.
+# It also makes optional #[inline] attributes on crate-exported methods unnecessary.
+lto = true
+# Slows-down compilation but slightly improves performance.
+codegen-units = 1

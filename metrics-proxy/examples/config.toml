@@ -1,0 +1,7 @@
+# Proxy binds to `http_listener_addr` and waits for incoming HTTP connections.
+http_listener_addr = "127.0.0.1:8080"
+
+# List of meta-server services.
+# Client can send trusted requests to the specified services only.
+# If no service is listed all trusted requests are ignored.
+[[service]]

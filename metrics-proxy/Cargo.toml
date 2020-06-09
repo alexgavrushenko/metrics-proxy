@@ -1,0 +1,18 @@
+[package]
+name = "metrics-proxy"
+version = "0.0.1"
+authors = ["Alexander Gavryushenko"]
+edition = "2018"
+
+[dependencies]
+base64 = "0.10.1"
+clap = "2.32"
+futures = "0.3"
+hyper = "0.13"
+log = "0.4"
+tokio = { version = "0.2", features = ["rt-util"] }
+hex = "0.3.1"
+slog = "2"
+slog-scope = "4"
+lazy_static = "1.4"
+prometheus = "0.8"
